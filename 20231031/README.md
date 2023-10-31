@@ -13,4 +13,16 @@ $I_{вх}=\frac{U}{R}=\frac{26}{28,85}=0,91A$
 
 $I_{вых} = I_{R1} + I_{R2} + I_{R3} + I_{R4} + I_{R5} + I_{R6} = 0,26 + 0,26 + 0,052 + 0,052 + 0,026 +0,26 = 0,91A$
 
-$ \frac{a}{b} \quad c + d \right\} $
+$$\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\begin{equation}
+  f(x)=\begin{cases}
+    1, & \text{if $x<0$}.\\
+    0, & \text{otherwise}.
+  \end{cases}
+\end{equation}
+
+\end{document}$$
