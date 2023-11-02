@@ -322,5 +322,5 @@ $S = U \cdot I = 50 \, \text{В} \times 0.0127 \, \text{А} \approx 0.635 \, \te
 <table>
 <tr><td colspan=5></td><td colspan=8></td></tr>
 <tr><td>R</td><td>L</td><td>C</td><td>f</td><td>U</td><td>Xl</td><td>Xc</td><td>Z</td><td>I</td><td>P</td><td>Q</td><td>S</td><td>cosф</td></tr>
-<tr><td>100</td><td>0,04</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>100</td><td>0,04</td><td>0,2</td><td>200</td><td>50</td><td>50,27</td><td>3987.87</td><td>3938,87</td><td>0,0127</td><td>0.0161</td><td>0,0348</td><td>0.635</td><td>0.0254</td></tr>
 </table>
