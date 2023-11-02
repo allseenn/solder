@@ -295,10 +295,6 @@ $Z = \sqrt{R^2+(X_L-X_C)^2}$
 
 **Решение**
 
-Прошу прощения за предыдущие недочеты. Давайте пересчитаем все значения с учетом ваших требований:
-
-Давайте пересчитаем все значения:
-
 1. **Индуктивное реактивное сопротивление $X_L$**:
 $X_L = 2\pi f L = 2\pi \times 200 \, \text{Гц} \times 0.04 \, \text{Гн} = 50.27 \, \Omega$
 
@@ -309,16 +305,22 @@ $X_C = \frac{1}{2\pi f C} = \frac{1}{2\pi \times 200 \, \text{Гц} \times 0.2 \
 $Z = \sqrt{R^2 + (X_L - X_C)^2} = \sqrt{100^2 + (50.27 - 3987.87)^2} \approx \sqrt{100^2 + (-3937.6)^2} \approx 3938.87 \, \Omega$
 
 4. **Ток в цепи $I$**:
-$I = \frac{U}{Z} = \frac{50 \, \text{В}}{3938.87 \, \Omega} \approx 0.0127 \, \text{А} \approx 12.7 \, \text{мА}$
+$I = \frac{U}{Z} = \frac{50 \, \text{В}}{3938.87 \, \Omega} \approx 0.0127 \, \text{А}$
 
 5. **Коэффициент мощности $\cos{\phi}$**:
 $\cos{\phi} = \frac{R}{Z} = \frac{100 \, \Omega}{3938.87 \, \Omega} \approx 0.0254$
 
 6. **Активная мощность $P$**:
-$P = U \cdot I \cdot \cos{\phi} = 50 \, \text{В} \times 0.0127 \, \text{А} \times 0.0254 \approx 0.0161 \, \text{Вт} \approx 16.1 \, \text{мВт}$
+$P = U \cdot I \cdot \cos{\phi} = 50 \, \text{В} \times 0.0127 \, \text{А} \times 0.0254 \approx 0.0161 \, \text{Вт}$
 
 7. **Реактивная мощность $Q$**:
-$Q = U \cdot I \cdot \sin{\phi} = 50 \, \text{В} \times 0.0127 \, \text{А} \times \sqrt{1 - 0.0254^2} \approx 0.398 \, \text{ВАр} \approx 398 \, \text{мВАр}$
+$Q = U \cdot I \cdot \sin{\phi} = 50 \, \text{В} \times 0.0127 \, \text{А} \times \sqrt{1 - 0.0254^2} \approx 0.6348 \, \text{ВАр}$
 
 8. **Полная мощность $S$**:
-$S = U \cdot I = 50 \, \text{В} \times 0.0127 \, \text{А} \approx 0.635 \, \text{ВА} \approx 635 \, \text{мВА}$
+$S = U \cdot I = 50 \, \text{В} \times 0.0127 \, \text{А} \approx 0.635 \, \text{ВА}$
+
+<table>
+<tr><td colspan=5></td><td colspan=8></td></tr>
+<tr><td>R</td><td>L</td><td>C</td><td>f</td><td>U</td><td>Xl</td><td>Xc</td><td>Z</td><td>I</td><td>P</td><td>Q</td><td>S</td><td>cosф</td></tr>
+<tr><td>100</td><td>0,04</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+</table>
