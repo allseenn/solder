@@ -147,14 +147,14 @@ $X_C = \frac{1}{2\pi f C}$
 
 $C = 0.1 \times 10^{-6} \, \text{Ф}$
 
-$X_C = \frac{1}{2\pi \times 50 \, \text{Гц} \times 0.1 \times 10^{-6} \, \text{Ф}} \approx 318.31 \, \Omega$
+$X_C = \frac{1}{2\pi \times 50 \, \text{Гц} \times 0.1 \times 10^{-6} \, \text{Ф}} \approx 31830 \, \Omega$
 
 3. Теперь, используя формулу для $Z$:
    $Z = \sqrt{R^2 + X_C^2}$
 
-$Z = \sqrt{10^2 + 318.31^2} \approx 320.32 \, \Omega$
+$Z = \sqrt{10^2 + 31830^2} \approx 31830 \, \Omega$
 
-**Ответ:** полное сопротивление цепи переменного тока составляет примерно $320.32 \, \Omega$
+**Ответ:** полное сопротивление цепи переменного тока составляет примерно $31830 \, \Omega$
 
 ### Полное сопротивление цепи с активным, индукционным и емкостными сопротивлениями
 
@@ -190,13 +190,13 @@ $X_L = 2\pi \times 50 \, \text{Гц} \times 0.1 \, \text{Гн} = 31.42 \, \Omega
 2. Рассчитаем $X_C$:
    $X_C = \frac{1}{2\pi f C}$
 
-$X_C = \frac{1}{2\pi \times 50 \, \text{Гц} \times 0.1 \times 10^{-6} \, \text{Ф}} \approx 318.31 \, \Omega$
+$X_C = \frac{1}{2\pi \times 50 \, \text{Гц} \times 0.1 \times 10^{-6} \, \text{Ф}} \approx 31830 \, \Omega$
 
 3. Найдем $Z$:
    $Z = \sqrt{R^2 + (X_L - X_C)^2}$
-   $Z = \sqrt{20^2 + (31.42 - 318.31)^2} \approx \sqrt{400 + 96770.21} \approx \sqrt{97170.21} \approx 311.51 \, \Omega$
+   $Z = \sqrt{20^2 + (31.42 - 31830)^2} \approx 31798 \Omega$
 
-**Ответ:** полное сопротивление цепи переменного тока составляет примерно $311.51 \, \Omega$.
+**Ответ:** полное сопротивление цепи переменного тока составляет примерно $31798 \, \Omega$.
 
 ### Полное сопротивление цепи при параллельном соединении активного и индуктивного элементов
 
@@ -212,7 +212,7 @@ $Z = \frac{R\frac{1}{\omega C}}{\sqrt{R^2+(\frac{1}{\omega C})^2}}$
 
 Возникает в последовательной RLC цепи (Максимальный ток + перенапряжение)
 
-$\omega L = \frac{1}{\omega C}
+$\omega L = \frac{1}{\omega C}$
 
 ### Резонанс токов
 
@@ -223,7 +223,7 @@ $I_m = \frac{U_m}{\sqrt{R^2+\underbrace{(\omega L - \frac{1}{\omega C})^2}_{\rig
 
 ## Мощность в цепи переменного тока
 
-<img src=pics/01.png>
+<img src=pics/01.png width=500>
 
 $S = \sqrt{P^2+(Q_L-Q_C)^2}$
 
@@ -276,6 +276,8 @@ $Z = \sqrt{R^2+(X_L-X_C)^2}$
 
 # Расчетная работа № 8
 
+<img src=pics/02.png>
+
 **Дано:**
 - $R=100\omega$
 - $L=0,04Гн$
@@ -295,32 +297,41 @@ $Z = \sqrt{R^2+(X_L-X_C)^2}$
 
 **Решение**
 
-1. **Индуктивное реактивное сопротивление $X_L$**:
+1. **Индуктивное сопротивление $X_L$**:
+
 $X_L = 2\pi f L = 2\pi \times 200 \, \text{Гц} \times 0.04 \, \text{Гн} = 50.27 \, \Omega$
 
-2. **Емкостное реактивное сопротивление $X_C$**:
+2. **Емкостное сопротивление $X_C$**:
+
 $X_C = \frac{1}{2\pi f C} = \frac{1}{2\pi \times 200 \, \text{Гц} \times 0.2 \times 10^{-6} \, \text{Ф}} \approx 3987.87 \, \Omega$
 
-3. **Полное импеданс $Z$** в цепи:
+3. **Полное сопротивление $Z$** в цепи:
+
 $Z = \sqrt{R^2 + (X_L - X_C)^2} = \sqrt{100^2 + (50.27 - 3987.87)^2} \approx \sqrt{100^2 + (-3937.6)^2} \approx 3938.87 \, \Omega$
 
 4. **Ток в цепи $I$**:
+
 $I = \frac{U}{Z} = \frac{50 \, \text{В}}{3938.87 \, \Omega} \approx 0.0127 \, \text{А}$
 
 5. **Коэффициент мощности $\cos{\phi}$**:
+
 $\cos{\phi} = \frac{R}{Z} = \frac{100 \, \Omega}{3938.87 \, \Omega} \approx 0.0254$
 
 6. **Активная мощность $P$**:
+
 $P = U \cdot I \cdot \cos{\phi} = 50 \, \text{В} \times 0.0127 \, \text{А} \times 0.0254 \approx 0.0161 \, \text{Вт}$
 
 7. **Реактивная мощность $Q$**:
+
 $Q = U \cdot I \cdot \sin{\phi} = 50 \, \text{В} \times 0.0127 \, \text{А} \times \sqrt{1 - 0.0254^2} \approx 0.6348 \, \text{ВАр}$
 
 8. **Полная мощность $S$**:
+
 $S = U \cdot I = 50 \, \text{В} \times 0.0127 \, \text{А} \approx 0.635 \, \text{ВА}$
 
-<table>
-<tr><td colspan=5></td><td colspan=8></td></tr>
+**Таблица ответов**
+<table border=1>
+<tr><td colspan=5>Дано</td><td colspan=8>Найти</td></tr>
 <tr><td>R</td><td>L</td><td>C</td><td>f</td><td>U</td><td>Xl</td><td>Xc</td><td>Z</td><td>I</td><td>P</td><td>Q</td><td>S</td><td>cosф</td></tr>
 <tr><td>100</td><td>0,04</td><td>0,2</td><td>200</td><td>50</td><td>50,27</td><td>3987.87</td><td>3938,87</td><td>0,0127</td><td>0.0161</td><td>0,0348</td><td>0.635</td><td>0.0254</td></tr>
 </table>
