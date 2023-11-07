@@ -17,3 +17,6 @@
 - [ЭДС](https://github.com/allseenn/solder/blob/main/20231101/README.md)
 
 - [Переменный ток](https://github.com/allseenn/solder/blob/main/20231102/README.md)
+
+## 3. Материаловедение
+
